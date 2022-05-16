@@ -1,0 +1,115 @@
+{% extends "base.html" %} {% block title %}View results{% endblock %} {% block content
+%}
+<h3 align="center">Top Ten</h3>
+
+<h4 >By matches won:</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Club Name</th>
+      <th scope="col">Won match</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  range (0,10) %}
+      <tr>
+          <th scope="row">{{i+1}}</th>
+          <td>{{result[i][0]}}</td>
+          <td>{{result[i][1]}}</td>
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+
+<h4 >By home matches won:</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Club Name</th>
+      <th scope="col">Won match</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  range (0,10) %}
+      <tr>
+          <th scope="row">{{i+1}}</th>
+          <td>{{home_won[i][0]}}</td>
+          <td>{{home_won[i][1]}}</td>
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+<h4 >By yellow cards:</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Club Name</th>
+      <th scope="col">Yellow cards</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  range (0,10) %}
+      <tr>
+          <th scope="row">{{i+1}}</th>
+          <td>{{Ycard[i][0]}}</td>
+          <td>{{Ycard[i][1]}}</td>
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+<h4 >By fouls:</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Club Name</th>
+      <th scope="col">fouls</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  range (0,10) %}
+      <tr>
+          <th scope="row">{{i+1}}</th>
+          <td>{{fouls[i][0]}}</td>
+          <td>{{fouls[i][1]}}</td>
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+<h4 >By shots:</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Club Name</th>
+      <th scope="col">##shots</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  range (0,10) %}
+      <tr>
+          <th scope="row">{{i+1}}</th>
+          <td>{{shots[i][0]}}</td>
+          <td>{{shots[i][1]}}</td>
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+{% endblock %}

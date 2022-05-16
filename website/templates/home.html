@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+
+ <br />
+<a type="button" class="btn btn-primary btn-lg btn-block" id = "1" href="/1">Add a new review on a match</a>
+<a type="button" class="btn btn-secondary btn-lg btn-block" id = "2" href="/2">View existing reviews on a given match</a>
+<a type="button" class="btn btn-primary btn-lg btn-block" id = "3" href="/3">Show all the players from a certain nationality and their home teams history</a>
+<a type="button" class="btn btn-secondary btn-lg btn-block" id ="4" href="4">Show the top 10 teams by matches won, home matches won, yellow cards, fouls,
+and shots</a>
+<a type="button" class="btn btn-primary btn-lg btn-block" id = "5" href="/5">Show all the teams who won the most games by season</a>
+<a type="button" class="btn btn-secondary btn-lg btn-block" id = "6" href="/6">Query and view a given team information</a>
+<a type="button" class="btn btn-primary btn-lg btn-block" id = "7" href="/7">Query and view a given player information (by their first and last name)</a>
+<a type="button" class="btn btn-secondary btn-lg btn-block" id = "8" href="/8">Identify the home team for a given stadium name</a>
+<a type="button" class="btn btn-primary btn-lg btn-block" id = "9" href="/9"> Show all the players who played a certain position</a>
+<a type="button" class="btn btn-secondary btn-lg btn-block" id = "10" href="/10">  Identify all the teams in a given city in the UK</a>
+
+<!--<ul class="list-group list-group-flush" id="notes">-->
+<!--  {% for note in user.notes %}-->
+<!--  <li class="list-group-item">-->
+<!--    {{ note.data }}-->
+<!--    <button type="button" class="close" onClick="deleteNote({{ note.id }})">-->
+<!--      <span aria-hidden="true">&times;</span>-->
+<!--    </button>-->
+<!--  </li>-->
+<!--  {% endfor %}-->
+<!--</ul>-->
+<!--<form method="POST">-->
+<!--  <textarea name="note" id="note" class="form-control"></textarea>-->
+<!--  <br />-->
+<!--  <div align="center">-->
+<!--    <button type="submit" class="btn btn-primary">Add Note</button>-->
+<!--  </div>-->
+<!--</form>-->
+{% endblock %}
+

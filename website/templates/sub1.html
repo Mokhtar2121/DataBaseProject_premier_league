@@ -1,0 +1,65 @@
+{% extends "base.html" %} {% block title %}Add review{% endblock %} {% block
+content %}
+<form method="POST">
+  <h3 align="center">Add new match review</h3>
+  <div class="form-group">
+    <label for="HomeClub">Home  club</label>
+    <input
+      type="text"
+      class="form-control"
+      id="HomeClub"
+      name="HomeClub"
+      placeholder="Enter the home club name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="AwayClub">Away  club</label>
+    <input
+      type="text"
+      class="form-control"
+      id="AwayClub"
+      name="AwayClub"
+      placeholder="Enter the away club name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="game_date">Game date</label>
+    <input
+      type="date"
+      class="form-control"
+      id="game_date"
+      name="game_date"
+      placeholder="Enter the date of the match"
+      />
+  </div>
+    <div class="form-group">
+    <label for="rate">Stars</label>
+    <input
+      type="number"
+      max="10"
+      min = "0"
+      class="form-control"
+      id="rate"
+      name="rate"
+      placeholder="How do you rate this match from 10 ? "
+    />
+    </div>
+
+    <div class="form-group">
+    <label for="comment">Comments: </label>
+    <input
+      type="textarea"
+      class="form-control"
+      id="comment"
+      name="comment"
+      placeholder="Enter your textual comment "
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary" >Submit</button>
+  </div>
+   <br />
+   <br />
+</form>
+{% endblock %}

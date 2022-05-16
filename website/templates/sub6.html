@@ -1,0 +1,71 @@
+{% extends "base.html" %} {% block title %}Team information{% endblock %}
+{% block content%}
+{% if (stad_name|length) >0 %}
+<h1 align="center">{{stad_name[0][0]}}</h1>
+
+ <br />
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Stadium Name </th>
+      <th scope="col">Building date </th>
+      <th scope="col">Capacity </th>
+      <th scope="col">Pitch width </th>
+      <th scope="col">Pitch length </th>
+      <th scope="col">Address </th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  stad_name%}
+      <tr>
+
+          <td>{{i[1]}}</td>
+          <td>{{i[2]}}</td>
+          <td>{{i[3]}}</td>
+          <td>{{i[4]}}</td>
+          <td>{{i[5]}}</td>
+          <td>{{i[6]}}</td>
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+ <br />
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Player Name </th>
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  squad%}
+      <tr>
+
+          <td>{{i[0]+" "+i[1]}}</td>
+
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+{% endif %}
+<form method="POST">
+  <div class="form-group">
+    <label for="Club">Club Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="Club"
+      name="Club"
+      placeholder="Enter a club name"
+    />
+  </div>
+   <button type=" أطلب تيس!" class="btn btn-primary" >Submit</button>
+</form>
+{% endblock %}

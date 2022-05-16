@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}All the teams in a given city{% endblock %}
+{% block content%}
+{% if (records|length) >0 %}
+<h1 align="center">Teams in {{City}}</h1>
+<br />
+<ul class="list-group list-group-flush" id="notes">
+  {% for i in records %}
+  <li class="list-group-item">
+    {{i[0]}}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+<br />
+<form method="POST">
+   <div class="form-group">
+    <label for="City">City Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="City"
+      name="City"
+      placeholder="Enter a city name"
+    />
+  </div>
+   <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+{% endblock %}

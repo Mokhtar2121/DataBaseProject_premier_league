@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Player information{% endblock %}
+{% block content%}
+<br />
+<h4 >Owner is {{records[0][0]}}</h4>
+<br />
+<form method="POST">
+   <div class="form-group">
+    <label for="Stadium">Stadium Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="Stadium"
+      name="Stadium"
+      placeholder="Enter a stadium name"
+    />
+  </div>
+   <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+{% endblock %}

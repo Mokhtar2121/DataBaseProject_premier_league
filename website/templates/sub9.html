@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}Show all the players who played a certain position{% endblock %}
+{% block content%}
+{% if (records|length) >0 %}
+<h2 >All {{Position}}s in premier league:</h2>
+<ul class="list-group list-group-flush" id="notes">
+  {% for i in records %}
+  <li class="list-group-item">
+    {{i[0]+ " "+ i[1]}}
+  </li>
+  {% endfor %}
+</ul>
+
+{% endif %}
+<form method="POST">
+   <div class="form-group">
+    <label for="Position">Position Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="Position"
+      name="Position"
+      placeholder="Enter a position name"
+    />
+  </div>
+   <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %} {% block title %}View review{% endblock %} {% block
+content %}
+{% if (records|length) >0 %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">user</th>
+      <th scope="col">Rate</th>
+      <th scope="col">Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in  records %}
+      <tr>
+          <th scope="row">{{i[0]}}</th>
+          <td>{{i[1]}}</td>
+          <td>{{i[2]}}</td>
+
+      </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+{% endif %}
+<form method="POST">
+
+  <div class="form-group">
+    <label for="HomeClub">Home  club</label>
+    <input
+      type="text"
+      class="form-control"
+      id="HomeClub"
+      name="HomeClub"
+      placeholder="Enter the home club name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="AwayClub">Away  club</label>
+    <input
+      type="text"
+      class="form-control"
+      id="AwayClub"
+      name="AwayClub"
+      placeholder="Enter the away club name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="game_date">Game date</label>
+    <input
+      type="date"
+      class="form-control"
+      id="game_date"
+      name="game_date"
+      placeholder="Enter the date of the match"
+      />
+  </div>
+
+  <br />
+  <button type="submit" class="btn btn-primary" >Submit</button>
+  </div>
+   <br />
+   <br />
+</form>
+{% endblock %}
