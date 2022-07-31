@@ -26,4 +26,32 @@ providing their rating (1-10) and a textual review.
 
 ### 2. Database Design & Implementation
 
-I designed the sql database to be like this 
+I designed the sql database to be like this model:
+
+![alt text](https://github.com/Mokhtar2121/DataBaseProject_premier_league/blob/f1f1fa3c263008b6d29ffb1834faf39deef5b180/Pics/Screenshot%202022-07-31%20205855.png?raw=true)
+
+
+### 3. Web Crawling and Data Population and Hosting 
+
+
+I used selenium by python to extract data from the original premier league site to save it in the sql database. 
+You can view my program that I used to populate my database via this [repo.](https://github.com/Mokhtar2121/Premier_league_Setting_Up_the_sql_database.git)
+
+### 4. Application Layer
+
+ I designed a client application that is capable of connecting to the database hosted on a remote MySQL server. The application have
+the following functionalities: <br />
+
+■ Add a new user review on a match <br />
+■ View existing reviews on a given match<br />
+■ Register a user<br />
+■ Show all the players from a certain nationality and their home teams history<br />
+■ Show the top 10 teams by matches won, home matches won, yellow cards, fouls,
+and shots<br />
+■ Show all the teams who won the most games by season<br />
+■ Query and view a given team information<br />
+■ Query and view a given player information (by their first and last name)<br />
+■ Identify the home team for a given stadium name<br />
+■ Show all the players who played a certain position<br />
+■ Identify all the teams in a given city in the UK<br />
+
