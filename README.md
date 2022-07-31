@@ -1,4 +1,4 @@
-# Premier League
+# Premier League Statics
 This is a web based application provides the user with some info about the premier league.
 In this project, I  built a database application for the english premier
 league, that allows users to get useful information about the players, teams and
