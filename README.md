@@ -39,7 +39,7 @@ You can view my program that I used to populate my database via this [repo.](htt
 
 ### 4. Application Layer
 
- I designed a client application that is capable of connecting to the database hosted on a remote MySQL server. The application have
+ I designed a client application that is capable of connecting to the database hosted on a remote MySQL server. The application which based on Flask tech, have
 the following functionalities: <br />
 
 ■ Add a new user review on a match <br />
@@ -54,4 +54,14 @@ and shots<br />
 ■ Identify the home team for a given stadium name<br />
 ■ Show all the players who played a certain position<br />
 ■ Identify all the teams in a given city in the UK<br />
+
+
+Finally, during doing this project I gained many skills in the following fields:
+
+* Flask technology.
+* HTML.
+* Python.
+* SQL.
+* Selenium.
+* Hosting databases.
 
